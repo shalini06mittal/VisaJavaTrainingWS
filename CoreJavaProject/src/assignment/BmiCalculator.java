@@ -12,11 +12,13 @@ public class BmiCalculator {
         double height = scanner.nextDouble();
 
         height = height/100;
+
         double bmi = weight /(height*height);
         System.out.println("BMI is "+bmi);
+
         if(bmi < 16)
             System.out.println("Severe Thinness");
-        else  if(bmi < 17)
+        else if(bmi < 17)
             System.out.println("Moderate Thinness");
         else if (bmi <18.5) {
             System.out.println("Mild Thinness");
@@ -32,5 +34,17 @@ public class BmiCalculator {
         else
             System.out.println("Obese Class 3");
 
+        /**
+         * take customer total amount of the items
+         * and calculate discount
+         * 1. member => > 10000
+         * 2. coupon code
+         * if customer is member{
+         *      if amount <= 5000
+         *          disc = 10
+         *      else if amount <= 10000
+         *          disc = 15
+         * }
+         */
     }
 }

@@ -21,6 +21,25 @@ public class Main {
     }
 }
 
+/**
+ *
+ * Java versions jdk1.1, 1.2, 1.4,
+ * 1.5 : M
+ * 1.6 : little
+ * 1.7 : switch-case , threads
+ * 1.8: MAJOR => source code, compiler, interpreter
+ * garbage collection
+ * jdk8
+ * jdk11 => string and date, http
+ * jdk14
+ * jdk17 => MAJOR
+ * jdk19
+ * jdk21
+ *
+ * SPRING : 5 , >5, tomcat (10 and jdk17) jakarta
+ * BOOT : <2.
+ *
+ */
 //// SOLID
 //class A{
 //
