@@ -7,9 +7,20 @@
  Desktop based applications : awt, swing GUI
  */
 public class Main {
+
+
+
     // starting point is the main method
     // signature has to be exactly as it is here
     public static void main(String[] args) {
+    long isbn = 1401603456;
+        int x=2, y=50;
+        do{
+            ++x;
+            y-=x++;
+        }while(x<=10);
+        System.out.println(y);
+        System.out.println();
         // send output to the console
         System.out.print("Welcome"); // print will not take the cursor on the next line
         System.out.println("bye");// println will  take the cursor on the next line

@@ -2,6 +2,10 @@ package arrays;
 
 public class Array2D {
     public static void main(String[] args) {
+
+        String s = "hello";
+        s="welcome";
+        System.out.println(s);
         // jagged array => enum data type
         /**
          * array.length => no of rows
