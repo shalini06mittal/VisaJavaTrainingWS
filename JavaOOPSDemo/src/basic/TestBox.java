@@ -22,6 +22,7 @@ public class TestBox {
         System.out.println(box1);
         System.out.println("Box1 dimensions");
         System.out.println(box1);
+        box1.setHeight(10);
         box1.displayBoxDimensions();
 
         //System.out.println(box1.height+" x "+box1.width+" x "+box1.length);
