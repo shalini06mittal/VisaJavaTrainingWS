@@ -14,6 +14,14 @@ public class BoxConstructorTest {
         // setters
         // represent the object in the form of string
         System.out.println(b2.toString());// print the state of b2
+        // reserve memory for 5 boxes
+        BoxConstructor boxes[]  = new BoxConstructor[5];
+        System.out.println(boxes[0]);
+        boxes[0] = b2;
+        boxes[1] = new BoxConstructor(2,3,4);
+        System.out.println(boxes[0].calVolume());
+        System.out.println(boxes[1].calVolume());
+        System.out.println(boxes[2].calVolume());
 
     }
 }
