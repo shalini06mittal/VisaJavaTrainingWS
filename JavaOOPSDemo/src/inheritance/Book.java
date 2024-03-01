@@ -77,6 +77,6 @@ public class Book extends Item {
         return "Book{" +
                 "year=" + year +
                 ", author='" + author + '\'' +
-                "} " ;
+                "} "+super.toString() ;
     }
 }
