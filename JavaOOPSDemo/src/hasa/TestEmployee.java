@@ -1,5 +1,4 @@
 package hasa;
-
 import java.util.Scanner;
 
 public class TestEmployee {
@@ -11,8 +10,7 @@ public class TestEmployee {
         MyDate d1 = new MyDate(12, m, 2023);
         Employee e1 = new Employee(1, "Shalini",
                 d1,
-                new MyDate(1,Month.JAN, 1980));
+                new MyDate(1, Month.JAN, 1980));
         System.out.println(e1);
-
     }
 }

@@ -23,6 +23,9 @@ public  interface InputSource{//} extends  DefaultSource {
          System.out.println("from interace");
      };
 }
+interface Message{
+    public void consume(String s1, String s2);
+}
 /**
  * Serializable
  * store emp, book, customer, item => db

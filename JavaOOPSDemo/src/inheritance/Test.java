@@ -10,6 +10,12 @@ public class Test {
 
     public static void main(String[] args) {
 
+        new Item() {
+            @Override
+            public double calculateMrp() {
+                return 0;
+            }
+        };
 //        Item item = new Item();
 //        item.setId(1);
 
