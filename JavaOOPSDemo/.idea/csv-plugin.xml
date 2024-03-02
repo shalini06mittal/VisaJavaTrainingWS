@@ -52,6 +52,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/interfaces/InterfaceAssn.java">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/p1/C.java">
           <value>
             <Attribute>
