@@ -21,7 +21,7 @@ public class ListProductDemo {
         }
         System.out.println();
         //products.sort(null);
-        Collections.sort(products);
+        //Collections.sort(products);
         for (Product p : products) {
             System.out.println(p);
         }

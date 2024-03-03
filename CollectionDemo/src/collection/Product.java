@@ -1,5 +1,7 @@
 package collection;
 
+import java.util.Objects;
+
 public class Product implements Comparable<Product>{
 
     private int pid;
@@ -47,8 +49,39 @@ public class Product implements Comparable<Product>{
 
     @Override
     public int compareTo(Product o) {
-       return this.getPid() - o.getPid();
+       //return this.getPid() - o.getPid();
         //return  o.getPid() - this.getPid();
-       // return o.getName().compareTo(this.getName());
+        return o.getName().compareTo(this.getName());
+    }
+
+
+//    @Override
+//    public int hashCode() {
+//        System.out.println("hashcode coalled");
+//        return 20;
+//    }
+//    @Override
+//    public boolean equals(Object obj) {
+//        System.out.println("equals called");
+//
+//        return this.getPid()==((Product)obj).getPid();
+//    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        System.out.println("equals");
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        if (this.getPid() == product.getPid()) return  false;
+        return pid == product.pid && Double.compare(price, product.price) == 0 && Objects.equals(name, product.name);
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("hash");
+        return Objects.hash(pid, name, price);
     }
 }
