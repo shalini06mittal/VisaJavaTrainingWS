@@ -19,7 +19,6 @@ public class Account {
 //            return  false;
             throw  new CannotWithdrawException("Withdrawal amount cannot be same as balance");
         balance -= amount;
-
         return true;
     }
 }
