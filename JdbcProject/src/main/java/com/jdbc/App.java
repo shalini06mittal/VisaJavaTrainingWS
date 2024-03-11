@@ -19,5 +19,9 @@ public class App
         System.out.println(list.size());
         for (Student student:list)
         System.out.println(student);
+        System.out.println(database.getStudentById(10));
+        Student s1 = new Student(3,"abc","abc@gmail.com","7878787878");
+        //database.insertStudent(s1);
+        database.insertStudentWithPreparedStatement(s1);
     }
 }
