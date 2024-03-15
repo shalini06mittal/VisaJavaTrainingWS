@@ -101,4 +101,31 @@ public class StudentDatabase {
 
         return  true;
     }
+    /**
+     * Create a method updateStudent that allows updation of subject Student
+     */
+    public boolean updateSubjectForStudent(String subject, int id){
+
+        String sql ="update student set subject=? where id=?";
+        Connection connection = null;
+
+        try {
+            connection = MyConnection.getConnection();
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1, subject);
+            statement.setInt(2, id);
+            statement.executeUpdate();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
+        }
+        return  true;
+    }
+
+    public  boolean deleteStudentById(int id){
+
+        return  true;
+    }
 }
