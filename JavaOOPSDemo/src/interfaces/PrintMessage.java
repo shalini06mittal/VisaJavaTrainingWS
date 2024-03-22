@@ -10,6 +10,7 @@ public class PrintMessage {
     // has-a, it depends on the object of InputSource
     InputSource inputSource;
 
+
     public PrintMessage(InputSource inputSource) {
         this.inputSource = inputSource;
     }

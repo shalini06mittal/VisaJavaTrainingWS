@@ -12,6 +12,7 @@ public class Hello {
          * file
          * network
          */
+        System.out.println("hello");
 //        ScannerInputSource s1 = new ScannerInputSource();
 //        FileInputSource f1 = new FileInputSource();
 //        InputSource inputSource = s1;
@@ -21,7 +22,7 @@ public class Hello {
 //        System.out.println(args[0]);
 
         // dropdown =>  scanner / db
-        PrintMessage p1 = new PrintMessage(new DBInputSource());
+        PrintMessage p1 = new PrintMessage(new FileInputSource());
         p1.print();
 
         InputSource source = new FileInputSource();
